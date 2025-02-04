@@ -12,23 +12,23 @@
 <body>
     <form action="#">
         <fieldset>
-            <legend>input의 종류</legend>
-            <input type="text">
+            <legend>input의 종류2</legend>
+            <input type="text" aria-label="">
             <input type="submit">
-            <input type="password">
-            <input type="tel">
-            <input type="email">
-            <input type="checkbox">
-            <input type="radio">
+            <input type="password" aria-label="">
+            <input type="tel" aria-label="">
+            <input type="email" aria-label="">
+            <input type="checkbox" aria-label="">
+            <input type="radio" aria-label="">
             <input type="file">
             <input type="button">
-            <input type="image" src="https://via.placeholder.com/200x200">
+            <input type="image" src="https://via.placeholder.com/200x200" alt="">
             <input type="hidden">
-            <input type="date">
-            <input type="datetime-local">
-            <input type="month">
-            <input type="week">
-            <input type="time">
+            <input type="date" aria-label="">
+            <input type="datetime-local" aria-label="">
+            <input type="month" aria-label="">
+            <input type="week" aria-label="">
+            <input type="time" aria-label="">
         </fieldset>
         <fieldset>
             <legend>아이디 입력 박스</legend>
@@ -58,7 +58,7 @@
                 <textarea id="content" name="content" placeholder="텍스트를 입력하세요"></textarea>
             </p>
         </fieldset>
-        <select name="example" id="example" size="5" multiple>
+        <select name="example" id="example" size="5" aria-label="" multiple >
             <optgroup label="과일">
                 <option value="apple1" selected>사과</option>
                 <option value="banana1">바나나</option>
@@ -74,8 +74,8 @@
         <button type="submit">   <!-- type은 submit 외에도 reset, button 지정 가능 -->
             <img src="https://picsum.photos/200/300" alt="계란 캐릭터"/>
         </button>
-        <input type="text" name="email" placeholder="이메일을 입력하세요">
-        <input type="text" name="nickname" maxlength="10" placeholder="최대 10자">
+        <input type="text" name="email" placeholder="이메일을 입력하세요" aria-label="이메일">
+        <input type="text" name="nickname" maxlength="10" placeholder="최대 10자" aria-label="닉네임">
     </form>
 </body>
 </html>
