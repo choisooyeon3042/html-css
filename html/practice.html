@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 실습</title>
+    <style>
+        form{
+            width:600px;
+        }
+        legend{
+            font-size:18px;;
+            font-weight:bold;
+        }
+        label{
+            font-size:14px;
+        }
+        input{
+            padding;12px;
+            font-size:14px;
+            height:24px;
+        }
+        button{
+            height:30px;
+        }
+        .red{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+<!--1. 로그인 화면-->
+    <form action="#">
+        <h1>로그인</h1>
+        <p>
+            <input type="text" name="id" id="id" placeholder="아이디">
+            <input type="password" name="pw" id="pw" placeholder="비밀번호">
+            <button type="submit">
+                로그인
+            </button>
+        </p>
+    </form>
+<!--2. 회원 정보 입력 화면-->
+    <form action="#">
+        <fieldset>
+            <legend>필수 입력 정보</legend>
+            <p>
+                <label for="id2">아이디<span class="red">*</span></label>
+                <input type="text" name="id2" id="id2" placeholder="아이디">
+            </p>
+            <p>
+                <label for="pw2">비밀번호<span class="red">*</span></label>
+                <input type="password" name="pw2" id="pw2" placeholder="비밀번호">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>선택 입력 정보</legend>
+            <p>
+                <label for="birth">생년월일</label>
+                <input type="date" name="birth" id="birth">
+            </p>
+            <p>
+                <label for="gender">성별</label>
+                <input type="password" name="gender" id="gender" placeholder="성별">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form 태그</title>
+    <style>
+        fieldset{
+            margin-bottom:1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>input의 종류</legend>
+            <input type="text">
+            <input type="submit">
+            <input type="password">
+            <input type="tel">
+            <input type="email">
+            <input type="checkbox">
+            <input type="radio">
+            <input type="file">
+            <input type="button">
+            <input type="image" src="https://via.placeholder.com/200x200">
+            <input type="hidden">
+            <input type="date">
+            <input type="datetime-local">
+            <input type="month">
+            <input type="week">
+            <input type="time">
+        </fieldset>
+        <fieldset>
+            <legend>아이디 입력 박스</legend>
+            <p>
+                <label>
+                    아이디
+                    <input type="text">
+                </label>
+            </p>
+            <p>
+                <label for="userId">아이디</label>
+                <input id="userId" type="text">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>커뮤니티 글쓰기</legend>
+            <p>
+                <label for="title">
+                    제목
+                    <input type="text" id="title" name="title">
+                </label>
+            </p>
+            <p>
+                <label for="content">
+                    내용
+                </label>
+                <textarea id="content" name="content" placeholder="텍스트를 입력하세요"></textarea>
+            </p>
+        </fieldset>
+        <select name="example" id="example" size="5" multiple>
+            <optgroup label="과일">
+                <option value="apple1" selected>사과</option>
+                <option value="banana1">바나나</option>
+                <option value="kiwi1">키위</option>
+                <option value="apple2">사과</option>
+                <option value="banana">바나나</option>
+                <option value="kiwi2">키위</option>
+                <option value="apple3">사과</option>
+                <option value="banana3">바나나</option>
+                <option value="kiwi3">키위</option>
+            </optgroup>
+        </select>
+        <button type="submit">   <!-- type은 submit 외에도 reset, button 지정 가능 -->
+            <img src="https://picsum.photos/200/300" alt="계란 캐릭터"/>
+        </button>
+        <input type="text" name="email" placeholder="이메일을 입력하세요">
+        <input type="text" name="nickname" maxlength="10" placeholder="최대 10자">
+    </form>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>테이블 실습</title>
+    <style>
+        table{
+            border:1px solid #000;
+            margin-bottom:1.2rem;
+            border-spacing:0;
+            width:300px;
+        }
+        thead th{
+            border-bottom:1px solid #000;
+            text-align:left;
+            background-color:#f6f6f6;
+        }
+        th,td{
+            padding:0.4rem;
+        }
+        tfoot td{
+            border-top:1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>메뉴</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>김치볶음밥</td>
+                <td>8000원</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>오므라이스</td>
+                <td>9000원</td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>메뉴</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>김치볶음밥</td>
+                <td>8000원</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>오므라이스</td>
+                <td rowspan="2">9000원</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>돈까스</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>총 금액</td>
+                <td colspan="2">26000원</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
