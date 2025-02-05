@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>선택자</title>
+    <style>
+        #title{
+            color:pink;
+        }
+        .highlight{
+            text-decoration:underline;
+            color:red;
+            font-weight:bold;
+        }
+        a{
+            color:deepskyblue;
+            text-decoration:none;
+        }
+        a[target="_blank"]{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">태그 선택자</h1>
+    <p id="sub_text" class="highlight">p태그1</p>
+    <p id="sub_text2" class="highlight">p태그2</p>
+    <p>강조 강조</p>
+    <a href="#">a</a>
+    <a href="#" target="_blank">a target</a>
+</body>
+</html>

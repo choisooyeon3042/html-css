@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>입력요소가상클래스</title>
+    <style>
+        body{
+            font-size:16px;
+        }
+        p{
+            font-size:12px;
+        }
+        p > *{
+           font-size:1.6em;
+        }
+        #agree +label{
+            font-size:1.8rem;
+            color:rgb(154 16 16);
+        }
+        button{
+            height:4vw;
+        }
+        input[type="text"]:focus{
+            border:1px solid blue;
+            background-color:#f2f2f2;
+       }
+        input[type="checkbox"]:checked +label{
+            color:green;
+            font-weight:bold;
+        }
+        button:disabled{
+            background-color:#ccc;
+        }
+        button:enabled{
+            background-color: #4caf50;
+	        color: white;
+        }
+    </style>
+</head>
+<body>
+<p>
+    <input type="text" placeholder="이름을 입력하세요" aria-label="이름 입력">
+    <input type="checkbox" id="agree" name="agree"/>
+    <label for="agree">
+        이용약관에 동의합니다
+    </label>
+    <button disabled>비활성화된 버튼</button>
+    <button>활성화된 버튼</button>
+</p>
+</body>
+</html>
