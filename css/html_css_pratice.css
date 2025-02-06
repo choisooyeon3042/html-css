@@ -1,38 +1,47 @@
-        body{
-             font-family: "42dot Sans", serif;
-        }
-        p{
-            margin:0;
-        }
-        .profile_box{
-            display: flex;
-            gap: 16px;
-            overflow: hidden;
-            border: 1px solid #000;
-            border-radius: 4px;
-            background-color: #f6f6f6;
-            width: 426px;
-            box-sizing:border-box;
-            align-items: center;
-            padding: 26px 20px;
-            margin: 0 auto;
-        }
-        .img{
-            width:100px;
-            height:100px;
-            background:url("../img/profile.jpg") no-repeat;
-            background-size:cover;
-            border-radius:50%;
-        }
-        .info{
-            flex-grow:1;
-        }
-        strong{
-            font-size: 20px;
-        }
-        .job{
-            font-size: 18px;
-            font-weight: bold;
-            margin: 5px 0;
-            color:#333;
-        }
+body {
+    margin: 0;
+    font-family: "42dot Sans", serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+p {
+    margin: 0;
+}
+
+.profile_box {
+    display: flex;
+    gap: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    width: 426px;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 26px 20px;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    background: url("../img/profile.jpg") no-repeat center/cover;
+    border-radius: 50%;
+}
+
+.info {
+    flex-grow: 1;
+}
+
+strong {
+    font-size: 20px;
+}
+
+.job {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #333;
+}
