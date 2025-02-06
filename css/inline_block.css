@@ -1,0 +1,58 @@
+       /*
+        .box{
+           display:flex;
+        }
+        .box1{
+            background-color:red;
+            width:200px;
+            height:200px;
+        }
+        .box2{
+            background-color:yellow;
+             width:200px;
+            height:200px;
+        }
+        .box3{
+            background-color:blue;
+             width:200px;
+            height:200px;
+        }
+        */
+        /* 또는 위 방식
+           inline-block으로 했을 경우 여백이 생김
+           이걸 해결 하려면 ?
+           .box{
+             font-size: 0px;
+             letter-spacing: 0px;
+             word-spacing: 0px;
+           }
+           .boxs{
+             display: inline-block;
+             margin: 0px;
+             padding: 0px;
+             font-size: 15px;
+             letter-spacing: 1em;
+             word-spacing: 2em;
+           }
+        */
+        .box{
+           text-align:right;
+        }
+        .boxs{
+            display:inline-block;
+        }
+        .box1{
+            background-color:red;
+            width:200px;
+            height:200px;
+        }
+        .box2{
+            background-color:yellow;
+             width:200px;
+            height:200px;
+        }
+        .box3{
+            background-color:blue;
+             width:200px;
+            height:200px;
+        }

@@ -1,0 +1,41 @@
+        body{
+             font-family: "42dot Sans", serif;
+        }
+        p{
+            margin:0;
+        }
+
+        .profile_box{
+            border: 1px solid #000;
+            border-radius: 4px;
+            background-color: #ffc6c6;
+            display: flex;
+            gap: 16px;
+            overflow: hidden;
+            width: 426px;
+            box-sizing:border-box;
+            align-items: center;
+            padding: 26px 20px;
+            position: relative;
+            left: calc(50% - 218px);
+        }
+        .img{
+            width:100px;
+            height:100px;
+            overflow:hidden;
+            background:url("../img/profile.jpg") no-repeat;
+            background-size:cover;
+            border-radius:50%;
+        }
+        .info{
+            flex:1;
+        }
+        strong{
+            font-size: 20px;
+        }
+        .job{
+            font-size: 18px;
+            font-weight: bold;
+            margin: 5px 0;
+            color:#333;
+        }
