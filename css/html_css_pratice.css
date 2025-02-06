@@ -6,18 +6,20 @@
         }
 
         .profile_box{
-            border: 1px solid #000;
-            border-radius: 4px;
-            background-color: #ffc6c6;
             display: flex;
             gap: 16px;
             overflow: hidden;
+            border: 1px solid #000;
+            border-radius: 4px;
+            background-color: #ffc6c6;
             width: 426px;
             box-sizing:border-box;
             align-items: center;
             padding: 26px 20px;
+            margin: 0 auto;
+            /* 방법
             position: relative;
-            left: calc(50% - 218px);
+            left: calc(50% - 218px);*/
         }
         .img{
             width:100px;
