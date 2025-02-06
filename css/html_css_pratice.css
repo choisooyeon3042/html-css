@@ -17,14 +17,10 @@
             align-items: center;
             padding: 26px 20px;
             margin: 0 auto;
-            /* 방법
-            position: relative;
-            left: calc(50% - 218px);*/
         }
         .img{
             width:100px;
             height:100px;
-            overflow:hidden;
             background:url("../img/profile.jpg") no-repeat;
             background-size:cover;
             border-radius:50%;
