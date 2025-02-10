@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript 실습</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Nanum+Gothic:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script>
+        /* setTimeout 예제 */
+        /* console.log("시작!");
+
+        setTimeout(function () {
+            console.log("3초 후 실행됨!")
+        }, 3000);
+
+        console.log("끝!"); */
+
+        /* setInterval 예제 */
+        /*let count = 1;
+        const intervalId = setInterval(function () {
+            console.log(`5초마다 실행됨! (${count}번째)`);
+             count++;
+
+            // 3번 실행 후 중지
+            if (count > 3) {
+                clearInterval(intervalId); // 타이머 중지
+                console.log("반복 종료@");
+            }
+        }, 5000);*/
+
+        /* 1초에 한 번 실행되고 10초에서 부터 카운트다운을 실행*/
+
+        let count = 10;
+
+        const interval = setInterval(function() {
+            console.log(count);
+            count--;
+
+            if (count < 0) {
+                clearInterval(interval);
+                console.log("종료")
+            }
+
+        }, 1000);
+
+
+    </script>
+</body>
+</html>
