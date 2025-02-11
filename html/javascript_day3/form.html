@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form 다루기</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Nanum+Gothic:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+
+
+    </style>
+</head>
+<body>
+    <form name="frm1">
+        <label for="uname">이름</label>
+        <input type="text" id="uname" name="uname">
+        <label for="age">나이</label>
+        <input type="text" id="age" name="age">
+        <label for="gender">성별</label>
+        <select id="gender" name="gender">
+            <option value="male">남성</option>
+            <option value="female">여성</option>
+        </select>
+        <textarea id="myTextArea" name="myTextArea"></textarea>
+        <input type="checkbox" id="myCheckbox" name="myCheckbox" value="apple" checked>
+        <button type="submit">전송</button>
+    </form>
+    <br>
+    <form name="frm2">
+        <label><input type="radio" name="fruits" value="apple">사과</label>
+        <label><input type="radio" name="fruits" value="banana">바나나</label>
+        <label><input type="radio" name="fruits" value="orange">오렌지</label>
+        <label><input type="radio" name="fruits" value="melon" checked>멜론</label>
+    </form>
+
+    <script>
+        console.log(document.frm1.elements);
+        console.log(document.frm1.elements['age']);
+        console.log(document.frm1.elements[3]);
+
+        //조회, 입력
+        document.frm1.uname.value = "이름을 입력하세요";
+        document.frm1.age.value = "성별을 입력하세요";
+        console.log(document.frm1.uname.value);
+        document.getElementById("myTextArea").value = "설정 값";
+        document.frm1.myTextArea.value = "name 값으로 접근 가능"
+
+        // 체크박스 실습
+        const checkbox = document.getElementById("myCheckbox");
+        if (checkbox.checked === true) {
+            alert(myCheckbox.value);
+        }
+
+        // radio
+        const radioList = document.querySelectorAll('[type="radio"]');
+
+        //반복문을 통해 각 라디오 버튼을 순회하며 checked
+        for (let i = 0; i < radioList.length; i++) {
+            if (radioList[i].checked === true) {
+                console.log(radioList[i].value);
+            }
+        }
+
+    </script>
+</body>
+</html>

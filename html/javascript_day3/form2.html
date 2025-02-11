@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form 다루기</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Nanum+Gothic:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+
+
+    </style>
+</head>
+<body>
+    <form name="frm">
+        <select>
+            <option value="apple">사과</option>
+            <option value="banana" selected>바나나</option>
+            <option value="orange">오렌지</option>
+            <option value="melon">멜론</option>
+        </select>
+    </form>
+
+<script>
+    const options = document.querySelectorAll('option');
+    for (let i = 0; i < options.length; i++) {
+        if (options[i].value === 'melon') {
+            options[i].selected = true;
+        }
+    }
+</script>
+</body>
+</html>

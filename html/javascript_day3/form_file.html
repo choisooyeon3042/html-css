@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>파일 업로드시 파일정보 출력하기</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Nanum+Gothic:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+
+
+    </style>
+</head>
+<body>
+<form name="frm">
+    <input type="file" name="upload">
+</form>
+
+<script>
+    const files = document.frm.upload.files;
+    console.log(files);
+
+    document.getElementById("upload").addEventListener("change", function(event) {
+        let files = event.target.files; // 업로드된 파일들 가져오기
+        let message = "";
+
+        if (files.length > 0) {
+            for (let file if files) {
+                message += `파일 이름: ${file.name}\n파일 크기: ${file.size} 바이트\n파일 타입: ${file.type}\n파일 마지막 수정일: ${file.lastModifiedDate}\n\n`
+            }
+            alert(message);
+        } else {
+            alert("파일을 선택하세요!");
+        }
+    });
+</script>
+</body>
+</html>

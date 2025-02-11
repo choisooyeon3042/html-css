@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form_event</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Nanum+Gothic:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+    <input type="text" id="messageInput" placeholder="메시지를 입력 후 Enter!" />
+    <p id="messageOutput"></p>
+
+<script>
+    document.getElementById("messageInput").addEventListener("keydown", function(event) {
+         console.log(event.key);
+         if (event.key === "Enter") { // Enter 키가 눌렸는지 확인
+             document.getElementById("messageOutput").textContent = `입력된 메시지: ${this.value}`;
+             this.value = ""; // 입력창 초기화
+         }
+     });
+</script>
+</body>
+</html>
